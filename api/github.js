@@ -5,8 +5,6 @@ module.exports = async (req, res) => {
     return res.status(400).send('username is missing from query parameters')
   }
 
-  console.log('req.query', req.query)
-
   const avatarUrl = `https://github.com/${req.query.username}.png`
 
   const opts = { fit: 'box', width: 40, height: 40 }

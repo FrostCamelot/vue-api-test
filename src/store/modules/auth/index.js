@@ -7,8 +7,6 @@ export default {
   mutations: {},
   actions: {
     login () {
-      console.log('login')
-
       return api.auth.login()
     }
   }
