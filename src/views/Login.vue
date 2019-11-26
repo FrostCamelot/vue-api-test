@@ -15,7 +15,8 @@ export default {
 
     startLogin () {
       this.login()
-        .then((res) => console.log(res))
+        .then(() => this.$router.push('home'))
+        .catch({})
     }
   }
 }
