@@ -2,6 +2,6 @@ import api from '@/api/api'
 
 export default {
   login () {
-    api.post('/api/login.js')
+    return api.post('/api/login.js')
   }
 }
